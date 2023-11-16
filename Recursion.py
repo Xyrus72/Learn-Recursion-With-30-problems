@@ -125,15 +125,13 @@
 # print(tri(5))
 
 #task-13
-def noX(a):
-    if a=='':
-        return ''
-    else:
-        if a[0]=='x':
-            
-        
-    
-    
-
-print(noX('xaxb'))
+# def noX(a):
+#     if a=='':
+#         return ''
+#     else:
+#         if a[0]=='x':
+#             return noX(a[1::])
+#         else:
+#             return a[0] + noX(a[1::])
+# print(noX('xxxxa'))
 
