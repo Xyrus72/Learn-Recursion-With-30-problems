@@ -124,7 +124,7 @@
 #         return a + tri(a-1)
 # print(tri(5))
 
-#task-13
+# task-13
 # def noX(a):
 #     if a=='':
 #         return ''
@@ -135,3 +135,28 @@
 #             return a[0] + noX(a[1::])
 # print(noX('xxxxa'))
 
+
+
+#task-14
+# def array220(nums, index):
+
+#     if index >= len(nums) - 1:
+#         return False
+#     if nums[index] * 10 == nums[index + 1]:
+#         return True
+#     else:
+
+#         return array220(nums, index + 1)
+
+# print(array220([1, 2, 20], 0))  
+# print(array220([3, 30], 0))     
+# print(array220([3], 0))         
+
+
+#task-15
+def end(a):
+    if a=='':
+        return ''
+    else:
+        if a[0]=='x':
+            return a[0]
