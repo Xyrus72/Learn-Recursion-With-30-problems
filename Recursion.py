@@ -154,9 +154,53 @@
 
 
 #task-15
-def end(a):
-    if a=='':
-        return ''
+# def end(a):
+#     if a=='':
+#         return ''
+#     else:
+#         if a[0]=='x':
+#             return end(a[1::])+'x'
+#         else:
+#             return a[0] + end(a[1::])
+# print(end('xxre'))
+
+
+
+#task-16
+# def c11(a):
+#     if len(a)<2:
+#         return 0
+#     else:
+#         if a[0]=='1' and a[1]=='1':
+#             return 1+ c11(a[2::])
+#         else:
+#             return c11(a[1::])
+# print(c11("abc11x11x11"))
+
+
+
+#task-17  #big brain moment
+# def parenBit(s):
+#     if s[0] != '(':
+#         return parenBit(s[1:])
+#     else:
+#         if s[-1] != ')':
+#             return parenBit(s[:-1])
+#         else:
+#             return s
+
+# print(parenBit(("xyz(abc)123")))
+
+
+#task-18
+def strCopies(s, sub, n):
+    if n == 0:
+        return True
+    elif len(s) < len(sub):
+        return False
     else:
-        if a[0]=='x':
-            return a[0]
+        if s[:len(sub)] == sub:
+            return strCopies(s[1:], sub, n-1)
+        else:
+            return strCopies(s[1:], sub, n)
+print(strCopies("catcowcat", "cat", 2))
