@@ -193,14 +193,50 @@
 
 
 #task-18
-def strCopies(s, sub, n):
-    if n == 0:
-        return True
-    elif len(s) < len(sub):
-        return False
-    else:
-        if s[:len(sub)] == sub:
-            return strCopies(s[1:], sub, n-1)
-        else:
-            return strCopies(s[1:], sub, n)
-print(strCopies("catcowcat", "cat", 2))
+# def strCopies(a,b,c):
+#     if len(a)<1:
+#         if c<0 or c>0:
+#             return False
+#         elif c==0:
+#             return True
+       
+    
+#     else:
+#         if b==a[:len(b):]:
+#             return strCopies(a[3::],b,c-1)
+#         else:
+#            return strCopies(a[1::],b,c)
+
+# print(strCopies("catcocatrwcat", "cat", 2))
+
+
+#19
+
+# def  changeXY(a):
+#     if len(a)==0:
+#         return a
+#     else:
+#         if a[0]=='x':
+#             a=a[1::]
+#             a='y'+a
+#             return a[0]+ changeXY(a[1::])
+#         else:
+#             return a[0]+ changeXY(a[1::])               
+# print(changeXY("xxhixx"))
+
+
+
+#20
+# def array6(a,b):
+#     if b==len(a)-1:
+#         return False
+#     else:
+#         if a[b]==6:
+#             return True
+#         else:
+#             return array6(a,b+1)
+# print(array6([1,6,2], 0))
+
+
+
+#21
